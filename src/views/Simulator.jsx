@@ -12,7 +12,6 @@ import Title from "components/partials/Title";
 import OptionsBox from "components/simulateur/OptionsBox";
 import ResultsSample from "components/simulateur/ResultsSample";
 import SimulatorLoader from "components/simulateur/SimulatorLoader";
-import Modal from 'components/partials/Modal';
 
 // Custom Hooks
 import { useVisibility } from "hooks/useVisibility";
@@ -31,7 +30,6 @@ const Simulator = (props) => {
   const [results, setResults] = useState(null); // jsonFile.results
   const [modeExpert, setModeExpert] = useState(false);
   const [showOptions, hideOptions, isVisible] = useVisibility(false);
-  const [open, setOpen] = useState(true);
 
 
   //Gestion d'une route avec paramêtres spécifiques
@@ -45,7 +43,7 @@ const Simulator = (props) => {
     async function initDatas() {
       var valuesURL = [];
       // cas où une sheet est déjà en dans le localstorage
-      const idSheet = localStorage.getItem("idSheet-VSGP");
+      const idSheet = localStorage.getItem("idSheet-Territoires");
 
       if (idSheet) {
         console.log("SHEET ALREADY CREATED, ID:", idSheet);
@@ -66,7 +64,7 @@ const Simulator = (props) => {
         //création d'une copie de la sheet master
         const response = await api.get("/sheet/");
         const idSheet = response.data.id;
-        localStorage.setItem("idSheet-VSGP", idSheet);
+        localStorage.setItem("idSheet-Territoires", idSheet);
         console.log("SHEET CREATED! ID:", idSheet);
 
         // cas où appel via url spécifique /save/p=1&&p=3.....
@@ -93,7 +91,7 @@ const Simulator = (props) => {
   //Fonction appellée à chaque actualisation de la variable state "values". Permet d'actualiser les résultats correpondant aux nouvelles values
   useEffect(() => {
     if (values) {
-      const idSheet = localStorage.getItem("idSheet-VSGP");
+      const idSheet = localStorage.getItem("idSheet-Territoires");
       const valuesFormatted = getValuesFormatted(values, jsonFile.options.unit);
       if (idSheet) {
         api
@@ -134,7 +132,7 @@ const Simulator = (props) => {
     const initMode = e.target.value;
     const valuesTemp = jsonFile.options[values[initMode]];
 
-    const idSheet = localStorage.getItem("idSheet-VSGP");
+    const idSheet = localStorage.getItem("idSheet-Territoires");
     const valuesFormatted = getValuesFormatted(valuesTemp, jsonFile.options.unit);
 
     // setValues(valuesTemp)
@@ -156,10 +154,6 @@ const Simulator = (props) => {
     setModeExpert(value);
   };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
-
   if (!values || !results) {
     return <SimulatorLoader />;
   }
@@ -176,15 +170,11 @@ const Simulator = (props) => {
         </Helmet>
 
         <section className="sim-container-box">
-          <Title id="sim-title">Mesures sur le territoire Vallée Sud Grand Paris - 2030</Title>
+          <Title id="sim-title">Mesures sur le territoire - 2030</Title>
           <SimulatorNavigation
             leftNavData={jsonFile.nav[0]}
             showOptions={showOptions}
             isActiveOptions={isVisible}
-            style={{
-              background: "linear-gradient(315deg, #452e5a 0%, #271d46 50%, #001438 100%)",
-              color: "white",
-            }}
           />
 
           <div className="sim-main-box">

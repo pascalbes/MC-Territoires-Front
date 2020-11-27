@@ -7,7 +7,9 @@ import ReactGA from "react-ga";
 import "styles/SimulatorNavigation.css";
 
 const SimulatorNav = ({ leftNavData, showOptions, style, isActiveOptions }) => {
+  
   const [isHovered, setIsHovered] = useState(false);
+
   function handleClickTracking(type) {
     ReactGA.event({
       category: "Click",

@@ -119,11 +119,11 @@ const ResultsSample = ({ results }) => {
           </div>
         </div>
 
-        <div id="results-button" className="flex-item">
-          <Link to={{ pathname: "/results", state: { results: results } }}>
-            <h1>Voir mes résultats complets >>></h1>
-          </Link>
-        </div>
+        <Link id="results-button" to={{ pathname: "/results", state: { results: results } }}>
+          <div className="flex-item">
+              <h1>Voir mes résultats complets >>></h1>
+          </div>
+        </Link> 
       </section>
     );
   }

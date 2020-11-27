@@ -14,6 +14,7 @@
   .modal-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: relative;
     background-color: white;
     box-shadow: grey;
@@ -26,18 +27,26 @@
 .close-btn {
     margin-top: 20px;
     font-family: var(--mainPolice);
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 18px;
     font-weight: normal;
     align-self: center;
     border: none;
     cursor: pointer;
-    width: 200px;
-    height: 40px;
+    padding: 12px 40px;
     background: var(--mainBlue);
     border-radius: 2px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 22px;
+    align-items: flex-start;
+    align-self: flex-end;
 }
+
+.close-btn:hover {background-color: #012340;}
   
+/* /// INTRO */
+#intro-modal ul {margin-left: 30px;}
+#intro-modal h3 {color:var(--mainBlue);text-align: center;font-weight: 500;margin-bottom: 20px;}
+#intro-modal a {color:var(--mainBlue);text-decoration: underline;}
+#intro-modal p {font-size:13px;color:var(--mainBlue);margin-bottom: 10px;}
+#modal_contact {background-color: var(--mainBlue);color:white;padding:5px 10px}

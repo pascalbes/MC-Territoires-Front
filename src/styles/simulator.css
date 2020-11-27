@@ -1,18 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
 
-/* /// INTRO */
-#intro-vsgp h3 {color:var(--mainBlue);text-align: center;}
-#intro-vsgp h3:last-of-type {margin-bottom: 20px;}
-#intro-vsgp a {color:var(--mainBlue);text-decoration: underline;}
-#intro-vsgp p {color:black;margin-bottom: 10px;}
-.p_minor {font-size: small;}
-
 
 /* /// SECTIONS */
 .sim-page {
   height: 92vh;
   background-color: #e5e5e5;
-  color: black;
+  color: var(--mainBlue);
   padding: 10px;
   min-height: 500px;
 }
@@ -46,7 +39,7 @@
 /* /// SIM-NAV */
 
 .title {
-  background-image: var(--backpurple);
+  background-color: var(--mainBlue);
   /* background-color: white; */
   border-radius: 2px;
   display: flex;
@@ -56,7 +49,7 @@
 }
 
 #sim-title {
-  height: 48px;
+  height: 40px;
   margin-bottom: 10px;
 }
 
@@ -65,7 +58,7 @@
 #results-emissions h1,
 #results-button h1 {
   font-family: var(--mainPolice);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   color: #ffffff;
   /* color: var(--mainBlue); */
@@ -188,7 +181,7 @@
   scroll-behavior: smooth;
   overflow-y: auto;
   padding: 10px;
-  height: calc(100% - 188px);
+  height: calc(100% - 180px);
   width: 100%;
 }
 
@@ -416,14 +409,14 @@ input[type="radio"] {
   z-index: 3;
 }
 /* /////////////////////// */
-/* /// RESULTS VSGP */
+/* /// RESULTS */
 /* /////////////////////// */
 
 /* SECTIONS */
 
 #results-top-box {
   width: 100%;
-  height: 48px;
+  height: 40px;
 }
 #results-climat-box {
   width: 100%;
@@ -448,13 +441,17 @@ input[type="radio"] {
 }
 #results-button {
   width: 100%;
-  height: calc(20% - 88px);
+  height: calc(20% - 80px);
   background: var(--mainBlue);
   border-radius: 2px;
   display: flex;
   padding-right: 16px;
   justify-content: flex-end;
   align-items: center;
+}
+
+#results-button:hover {
+  background-color: #012340;
 }
 
 .results-content-box {
@@ -502,7 +499,7 @@ input[type="radio"] {
   margin-right: 0;
 }
 
-.results-title {color:black;font-size: 11px;}
+.results-title {color:var(--mainBlue);font-size: 10px;}
 
 #results-climat-box .indicators-secondary-box .results-title {height: 32px;margin-top: -4px;}
 
@@ -510,15 +507,15 @@ input[type="radio"] {
   font-family: var(--mainPolice);
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   width: 100%;
-  height: 3rem;
+  height: 45px;
 }
 
 .indicator-tooltip {font-size: 14px;margin-left: 10px;opacity: 0.7;}
 
-.indicators-main-box .results-figure {font-size: 28px;}
+.indicators-main-box .results-figure {font-size: 25px;}
 
 /* /// RESULTS OLD*/
 
@@ -699,13 +696,13 @@ input[type="radio"] {
 .chart-tooltip h4 {
   font-size: 1.1em;
   align-self: center;
-  color:black
+  color:var(--mainBlue)
 }
 
 .chart-tooltip p {
   font-size: 0.9em;
   align-self: center;
-  color:black
+  color:var(--mainBlue)
 }
 
 /* /// COMPOSANT INDICATEUR AVEC TITRE BOX ET LEGENDE */
