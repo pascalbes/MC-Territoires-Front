@@ -235,7 +235,7 @@
 }
 
 .res-title-box {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--mainPolice);
     font-weight: 300;
     margin-bottom: 30px;
 }
@@ -302,7 +302,7 @@
 }
 
 .res-chart-source {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--mainPolice);
     font-weight: 300;
     font-size: 0.9em;
 }

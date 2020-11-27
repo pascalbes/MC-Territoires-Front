@@ -197,7 +197,7 @@ const Simulator = (props) => {
             showOptions={showOptions}
             isActiveOptions={isVisible}
             style={{
-              background: "linear-gradient(101.38deg, #006567 0%, #00AEC7 100%)",
+              background: "linear-gradient(315deg, #452e5a 0%, #271d46 50%, #001438 100%)",
               color: "white",
             }}
           />

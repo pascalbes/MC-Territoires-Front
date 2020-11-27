@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 7fr 1fr;
   gap: 10px;
-  font-family: "Ruda", sans-serif;
+  font-family: var(--mainPolice);
   padding: 10px 20px;
 }
 
@@ -13,13 +13,12 @@
 }
 
 #SimulatorNavigation .scope {
-  font-family: "Rajdhani";
+  font-family: var(--mainPolice);
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
   border-bottom: 1px solid white;
-  text-transform: uppercase;
 }
 
 #SimulatorNavigation .icons {

@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
 
 /* /// INTRO */
-#intro-vsgp h3 {color:#067F83;text-align: center;}
+#intro-vsgp h3 {color:var(--mainBlue);text-align: center;}
 #intro-vsgp h3:last-of-type {margin-bottom: 20px;}
-#intro-vsgp a {color:#067F83;text-decoration: underline;}
+#intro-vsgp a {color:var(--mainBlue);text-decoration: underline;}
 #intro-vsgp p {color:black;margin-bottom: 10px;}
 .p_minor {font-size: small;}
 
@@ -46,7 +46,8 @@
 /* /// SIM-NAV */
 
 .title {
-  background: linear-gradient(101.38deg, #006567 0%, #00aec7 100%);
+  background-image: var(--backpurple);
+  /* background-color: white; */
   border-radius: 2px;
   display: flex;
   align-items: center;
@@ -63,10 +64,11 @@
 #results-top-box h1,
 #results-emissions h1,
 #results-button h1 {
-  font-family: "Ruda", sans-serif;
+  font-family: var(--mainPolice);
   font-size: 20px;
   font-weight: normal;
   color: #ffffff;
+  /* color: var(--mainBlue); */
   padding-bottom: 0;
   margin-bottom: 0;
   line-height: 20px;
@@ -84,7 +86,6 @@
 
 #sim-nav-box h2 {
   /* font-family: "Circular Std"; */
-  text-transform: uppercase;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -423,7 +424,6 @@ input[type="radio"] {
 #results-top-box {
   width: 100%;
   height: 48px;
-  background-color: white;
 }
 #results-climat-box {
   width: 100%;
@@ -449,7 +449,7 @@ input[type="radio"] {
 #results-button {
   width: 100%;
   height: calc(20% - 88px);
-  background: #067f83;
+  background: var(--mainBlue);
   border-radius: 2px;
   display: flex;
   padding-right: 16px;
@@ -507,11 +507,11 @@ input[type="radio"] {
 #results-climat-box .indicators-secondary-box .results-title {height: 32px;margin-top: -4px;}
 
 .results-figure {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: var(--mainPolice);
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 500;
   width: 100%;
   height: 3rem;
 }
@@ -838,7 +838,7 @@ input[type="radio"] {
   }
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 600px) {
   .sim-categorie-emissions {font-size: 11px;}
 
   #results-top-box {height: 150px; }
