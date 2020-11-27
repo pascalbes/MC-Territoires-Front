@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 import "../../styles/header.css";
-import { withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import Modal from 'components/partials/Modal';
 import { faQuestionCircle } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Header = ({ background }) => {
+const Header = ({background }) => {
 
   let backgroundColor = ""
   let color = ""
@@ -41,9 +41,11 @@ const Header = ({ background }) => {
           </div> 
         }>
       </Modal>
-      <img src={logo} alt="LogoVSGP"/>
-      {/* <a style={{color:color}}>VERSION BETA / CONFIDENTIEL</a> */}
-      <a href="http://mission-climat.io" style={{color:color}}>mission climat territoires</a>
+      <Link className="header-link flex-item" to="/">
+          <img src="../../../images/logo/missionclimat_blue.svg" alt="Home logo" className="header-logo" />
+          <h4>mission climat <span>#territoires</span></h4>
+        </Link>
+      {/* <p style={{color:color}}>territoire urbain</p> */}
       <div className="indicator" onClick={()=>setOpen(true)}>
         <span className="indicator-tooltip">
             <FontAwesomeIcon icon={faQuestionCircle} />

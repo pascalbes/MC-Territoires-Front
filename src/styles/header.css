@@ -1,6 +1,11 @@
 header {padding: 0em 1em;height: 8vh;justify-content: space-between;align-items: center;width: 100%;background-color: white;border-bottom:1px solid white}
-header img {width: 185px;height: 50px;}
-header a {font-family: var(--mainPolice);font-size: 28px;line-height: 31px;padding:5px 50px}
+
+.header-link {display: flex;align-items: center;justify-content: flex-start;}
+.header-link h4 {font-family: "Fugaz One",cursive;color: var(--mainBlue)}
+.header-link h4 span {background: -webkit-linear-gradient(135deg, rgb(126, 212, 164), rgb(0, 124, 161));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+.header-logo { width: 2em; margin-right: 1em;}
 
 /* header a {font-family: 'Rajdhani', sans-serif;font-weight: 800;font-size: 28px;line-height: 31px;text-transform: uppercase;padding:5px 200px; background-color:rgb(255, 241, 118); ;color: black} */
 
