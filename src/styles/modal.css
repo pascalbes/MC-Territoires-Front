@@ -49,4 +49,5 @@
 #intro-modal h3 {color:var(--mainBlue);text-align: center;font-weight: 500;margin-bottom: 20px;}
 #intro-modal a {color:var(--mainBlue);text-decoration: underline;}
 #intro-modal p {font-size:13px;color:var(--mainBlue);margin-bottom: 10px;}
+#intro-modal li {font-size:13px;color:var(--mainBlue);font-family:var(--textPolice);}
 #modal_contact {background-color: var(--mainBlue);color:white;padding:5px 10px}

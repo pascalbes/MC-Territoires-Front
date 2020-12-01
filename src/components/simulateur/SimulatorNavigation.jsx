@@ -25,11 +25,11 @@ const SimulatorNav = ({ leftNavData, showOptions, style, isActiveOptions }) => {
   return (
     <div id="SimulatorNavigation" style={style}>
       <h2 className="scope">{leftNavData.scope}</h2>
-      <h2 className="scope">Options</h2>
+      {/* <h2 className="scope">Options</h2> */}
       <div className="icons">
         <SimulatorNavigationMenu data={leftNavData} />
       </div>
-      <div className="options-container">
+      {/* <div className="options-container">
         <button
           onMouseOver={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -44,7 +44,7 @@ const SimulatorNav = ({ leftNavData, showOptions, style, isActiveOptions }) => {
           />
         </button>
         <p style={{ color: isActiveOptions || isHovered ? "black" : "white" }}>Options</p>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 #SimulatorNavigation {
   width: 100%;
   display: grid;
-  grid-template-columns: 7fr 1fr;
+  /* grid-template-columns: 7fr 1fr; */
   gap: 5px;
   font-family: var(--mainPolice);
   background-color: var(--mainBlue);

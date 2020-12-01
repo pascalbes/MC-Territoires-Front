@@ -12,7 +12,7 @@ const ResultsSample = ({ results }) => {
   const secondaryColor = "var(--lightgrey)";
   const fontColor= "black"
 
-  const indicatorObjectives = {climate:-27, energy:-11, air: [-70, -57]}
+  const indicatorObjectives = {climate:-50, energy:-50, air: [-70, -70]}
 
   function handleIndicatorColor(data, obj) {
     const objReached = data / obj * 100

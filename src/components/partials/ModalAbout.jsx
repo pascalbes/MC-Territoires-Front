@@ -19,15 +19,15 @@ const ModalAbout = () => {
           <p>Pour toute question, manifestation d'intérêt, notre contact :   <span id="modal_contact">contact@mission-climat.io</span>
           </p>
 
-          <p>Comme tout production Mission Climat, Mission Climat Territoires est disponible en open source.</p>
+          <p>Comme toute production Mission Climat, Mission Climat Territoires est disponible en open source.</p>
 
         <p>L'équipe :
 
           <ul>
             <li><b>Pilotage</b> : Pascal Besson et Guillaume Martin</li>
-            <li><b>Développement web</b> : Pascal Besson et Franck-Olivier Marmier</li>
             <li><b>Modèle de calcul</b> : BL Evolution</li>
             <li><b>Conception UX-UI</b> : Oriana Berthomieu</li>
+            <li><b>Développement web</b> : Pascal Besson et Franck-Olivier Marmier</li>
         </ul>
         </p>
 
